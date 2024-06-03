@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgb(171, 145, 145);
+}
+
+.logo a{
+    color: white;
+}
+
+.nav-link li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.nav-link{
+    display: flex;
+    gap: 20px;
+    font-size: large;
+}
+
+.link-nav{
+    color: white;
+    transition: color 0.3s;
+}
+
+.link-nav:hover{
+    color: rgb(107, 69, 69);
+}
+
+
+/* Nav responsive styling */
+@media (max-width: 768px) {
+    .nav-link {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(171, 145, 145);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .navbar.responsive .nav-link {
+        display: flex;
+        max-height: 500px;
+    }
+
+    .nav-link li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .link-nav {
+        padding: 10px 20px;
+        width: 100%;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgb(171, 145, 145);
+        color: white;
+        border: none;
+        font-size: 1.5em;
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+.banner{
+    background-image: url('https://img.freepik.com/free-vector/coffee-banner-design-template_53876-100711.jpg?t=st=1717353119~exp=1717356719~hmac=646b262198cd279f2081158288339aeedbf538f2277c37f9ea5baad4579f79c3&w=900');
+    height: 80vh;
+    width: 100%; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+.hero{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* welcome message styling */
+.welcome-message {
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    border-radius: 8px;
+}
+
+.welcome-message h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(107, 69, 69);
+}
+
+.welcome-message p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+} 
+
+
+/* Category section styling */
+.menu-section {
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu-section .category {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    font-size: 2em;
+    color: rgb(107, 69, 69);
+    margin-bottom: 20px;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin: 10px 0;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.category-list a:hover {
+    color: rgb(107, 69, 69);
+}
+
+
+/* menu card */
+.menu-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 350px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.menu-card h3 {
+    font-size: 1.5em;
+    color: rgb(107, 69, 69);
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: rgb(107, 69, 69);
+    font-weight: bold;
+}
+
+
+/* reservation form styling */
+.reservation-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(107, 69, 69);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(85, 55, 55);
+}
+
+
+.form-error {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* contact */
+.contact-section {
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 2em;
+    color: rgb(107, 69, 69);
+    margin-bottom: 20px;
+}
+
+.contact-info, .contact-map, .contact-form {
+    margin-bottom: 20px;
+}
+
+.contact-info h3, .contact-map h3, .contact-form h3 {
+    margin-bottom: 10px;
+    color: rgb(107, 69, 69);
+}
+
+.contact-info p, .contact-info a {
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-map iframe {
+    width: 100%;
+    max-width: 600px;
+    border: 0;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* footer styling */
+footer {
+    background-color: rgb(171, 145, 145);
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-container > div {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-container h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-left p,
+.footer-center p,
+.footer-right p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: rgb(107, 69, 69);
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: rgb(107, 69, 69);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+}
+
+
+
