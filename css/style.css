@@ -151,7 +151,7 @@ a{
 
 @media (max-width: 480px) {
     .banner {
-        padding: 80px 10px 20px;
+        padding: 40px 10px 20px;
     }
 
     .welcome-message h1 {
@@ -374,6 +374,10 @@ footer {
 .footer-center p,
 .footer-right p {
     margin: 5px 0;
+}
+
+.footer-left p, .footer-left a {
+    color: white;
 }
 
 .social-media {
